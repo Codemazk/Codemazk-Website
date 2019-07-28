@@ -1,3 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Archivo:400,500,600,700&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap';
+@import '/fonts/line-awesome/css/line-awesome.min.css';
+
 body{
     margin:0;
 }
@@ -24,32 +31,70 @@ body{
         padding: 20px 50px;
     }
 }
-
+.navbar.scroll{
+    box-shadow: dimgrey 0px 0px 15px -5px;
+}
 .banner{
     height:400px;
     padding: 25px 0px;
     .content{
-        text-align: right;
-        font-family: 'Lato';
-        font-size: 35pt;
-        font-weight: 600;
-        width: 50%;
-        padding: 80px 30px 0px 0px;
-        letter-spacing: 1.27px;
-        span{
-            font-size: 22px;
-            display: block;
-            color: #9a9a9a;
-            padding: 10px;
-        }
+        width: 47%;
+        float: left;
+        text-align: center;
+        padding-top: 130px;
     }
     &.banner-1{
-        
+        margin-top: 30px;
+        .image{
+            width: 50%;
+            height: 100%;
+            float: left;
+            background-image: url(http://localhost/img/annie-spratt-QckxruozjRg-unsplash-min.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #30716d6e;
+            background-blend-mode: overlay;
+        }
     }
     &.banner-2{
         .content{
             float: right;
         }
+    }
+}
+
+.about{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    .card{
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        padding:20px 0;
+    }
+}
+
+@import 'text.less';
+@import 'button.less';
+@import 'color.less';
+
+.text-quote{
+    text-align: right;
+    font-family: 'Lato';
+    font-size: 35pt;
+    font-weight: 600;
+    padding: 80px 30px 0px 30px;
+    letter-spacing: 1.27px;
+    color: #565555;
+    span{
+        font-size: 22px;
+        display: block;
+        color: #9a9a9a;
+        padding: 10px;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
